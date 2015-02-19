@@ -2,6 +2,8 @@
 
 <%= link_to "Activity Graph", person_activity_path(@person) %>
 
+<p><%= @person.nick -%> has been thanked <%= @person.thanks -%> times.</p>
+
 <div id='messages'>
   <% if @messages.empty? %>
     There are no messages... yet.
